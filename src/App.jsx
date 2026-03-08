@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, } from "react";
 
 // ============================================================
 // IMPORT FROM SITECONFIG — single source of truth
@@ -295,7 +295,6 @@ const TickerBar = ({ dark }) => {
    ============================================================ */
 const Nav = ({ dark, setDark, page, setPage }) => {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", h);
